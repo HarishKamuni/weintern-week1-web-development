@@ -466,6 +466,48 @@ img {
   color: var(--white);
 }
 
+/* CTA */
+.cta-content {
+  text-align: center;
+}
+
+.cta-content h2 {
+  color: var(--dark-color);
+
+  font-size: clamp(2rem, 4vw, 3rem);
+
+  margin-bottom: 15px;
+}
+
+.cta-content p:not(.section-label) {
+  color: var(--muted-color);
+
+  margin-bottom: 25px;
+}
+
+/* footer */
+.footer {
+  background-color: var(--dark-color);
+
+  color: #cbd5e1;
+
+  padding: 25px 0;
+}
+
+.footer-content {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+.footer-note {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
 /* media queries */
 
 /* Tablet */
