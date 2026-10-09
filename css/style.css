@@ -144,6 +144,158 @@ img {
   cursor: pointer;
 }
 
+/* Hero Section */
+.hero {
+  padding: 110px 0;
+
+  background: linear-gradient(135deg, #eff7fe, #c8d9f0);
+}
+
+.hero-content {
+  display: grid;
+
+  grid-template-columns: 1.2fr 0.8fr;
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+.hero-intro {
+  color: var(--primary-color);
+
+  font-size: 1.1rem;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  color: var(--dark-color);
+
+  font-size: clamp(2.5rem, 7vw, 5rem);
+
+  line-height: 1.05;
+
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  color: var(--text-color);
+
+  font-size: clamp(1.4rem, 3vw, 2rem);
+
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  max-width: 600px;
+
+  color: var(--muted-color);
+
+  font-size: 1.05rem;
+
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+}
+
+.hero-image {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.image-container {
+  width: 300px;
+  height: 300px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, var(--muted-color), #0e0e0e);
+
+  color: var(--white);
+
+  font-size: 5rem;
+
+  font-weight: 700;
+
+  box-shadow: 0 25px 50px rgba(9, 10, 10, 0.2);
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+.image-container img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 13px 22px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  color: var(--white);
+
+  background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-secondary {
+  color: var(--dark-color);
+
+  background-color: var(--white);
+
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--light-background);
+}
+
+
 
 /* media queries */
 
@@ -245,7 +397,7 @@ img {
     padding: 80px 0;
   }
 
-  .profile-placeholder {
+  .image-container {
     width: 220px;
     height: 220px;
 
@@ -285,7 +437,7 @@ img {
     width: 100%;
   }
 
-  .profile-placeholder {
+  .image-container {
     width: 190px;
     height: 190px;
   }
